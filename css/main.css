@@ -101,7 +101,6 @@ a {
 } 
 @media (max-width:767px) {
     .header .logo {
-        width: 100%;
         height: 50px;
     }
 }
@@ -282,6 +281,7 @@ h2.main-title span{
 @media (max-width:767px) {
     .cover p{
         text-align: justify;
+        line-height: 1.9;
     }
 }
 .cover a{
@@ -391,4 +391,5 @@ h2.main-title span{
 .footer .copyright{
     position: relative;
     z-index: 2;
+
 }
