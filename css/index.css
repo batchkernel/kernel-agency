@@ -242,12 +242,15 @@ p.second-title {
 .services .container .card p{
     text-align: justify;
     color: #777;
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 1.9;
+
 }
 
 @media (max-width:767px) {
     .services .container .card p{
         margin: 0;
+        
     }
 }
 
@@ -318,6 +321,8 @@ p.second-title {
 .reviews .container .card .body p{
     text-align: justify;
     color: #777;
+    font-size: 18px;
+    line-height: 1.9;
 
 }
 .reviews .container .card .foot{
@@ -355,5 +360,6 @@ p.second-title {
   color: #ff533d;
 }
 .reviews .container .card .foot .like i.empty{
+
 
 }
