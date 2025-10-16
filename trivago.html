@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivago Hotel - Premium Accommodation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/trivago.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">T</div>
+                <div class="logo-text">
+                    <h1>Trivago Hotel</h1>
+                    <p>Comfort • Luxury • Prime Location</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="book-now-btn" onclick="scrollToBooking()">Book Now</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Trivago Hotel</h1>
+            <p>Experience elegant rooms, premium services, and world-class comfort in the heart of the city.</p>
+            <button class="hero-btn" onclick="scrollToBooking()">Book Your Stay</button>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Rooms</h2>
+                <p>Choose from our selection of luxurious rooms designed for your comfort and relaxation.</p>
+            </div>
+            
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Deluxe Double Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Deluxe Double Room</h3>
+                        <p>Spacious room with a king-size bed, modern amenities, and a beautiful city view.</p>
+                        <div class="room-price">
+                            <div class="price">$129/night</div>
+                            <button class="book-now-btn" onclick="scrollToBooking()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Executive Suite">
+                    </div>
+                    <div class="room-info">
+                        <h3>Executive Suite</h3>
+                        <p>Luxurious suite with separate living area, premium amenities, and panoramic views.</p>
+                        <div class="room-price">
+                            <div class="price">$249/night</div>
+                            <button class="book-now-btn" onclick="scrollToBooking()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Family Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Family Room</h3>
+                        <p>Perfect for families with connecting rooms, kid-friendly amenities, and extra space.</p>
+                        <div class="room-price">
+                            <div class="price">$189/night</div>
+                            <button class="book-now-btn" onclick="scrollToBooking()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities" id="amenities">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Amenities</h2>
+                <p>We offer a wide range of amenities to make your stay comfortable and memorable.</p>
+            </div>
+            
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Free Wi-Fi</h3>
+                    <p>High-speed internet access throughout the hotel</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Swimming Pool</h3>
+                    <p>Outdoor heated pool with stunning views</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness Center</h3>
+                    <p>24/7 access to modern exercise equipment</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurant</h3>
+                    <p>Fine dining with international cuisine</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Relaxing treatments and massage therapies</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Secure parking facilities for all guests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Take a visual tour of our hotel facilities and beautiful interiors.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hotel Lobby">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pool Area">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Restaurant">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Spa">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Room Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Conference Room">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Guest Testimonials</h2>
+                <p>See what our guests have to say about their experience at Trivago Hotel.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The stay was absolutely wonderful! The room was spacious and clean, the staff was incredibly helpful, and the location was perfect for exploring the city."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Business Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "We had an amazing family vacation at Trivago Hotel. The kids loved the pool, and we appreciated the family-friendly amenities. Will definitely return!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Brown">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Brown</h4>
+                            <p>Family Vacation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The executive suite was worth every penny! The view was breathtaking, and the service was impeccable. This is now my go-to hotel in the city."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Davis">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Davis</h4>
+                            <p>Luxury Traveler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Stay</h2>
+                <p>Fill out the form below to reserve your room at Trivago Hotel.</p>
+            </div>
+            
+            <div class="booking-container">
+                <form class="booking-form" id="bookingForm" onsubmit="return handleBooking(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">Check-in Date</label>
+                            <input type="date" id="checkin" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check-out Date</label>
+                            <input type="date" id="checkout" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="roomType">Room Type</label>
+                            <select id="roomType" class="form-control" required>
+                                <option value="">Select room type</option>
+                                <option value="deluxe">Deluxe Double Room - $129/night</option>
+                                <option value="executive">Executive Suite - $249/night</option>
+                                <option value="family">Family Room - $189/night</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" class="form-control" min="1" max="6" value="1" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" class="form-control" rows="4" placeholder="Any special requests or requirements"></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Book Now</button>
+                        <button type="button" class="reset-btn" onclick="resetForm()">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries or assistance.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>123 Luxury Avenue, Downtown District<br>City, State 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@trivagohotel.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Reception Hours</h3>
+                            <p>24/7 Front Desk Service</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.99884968459426!3d40.71911697933005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCanary%20Club!5e0!3m2!1sen!2sus!4v1644262070010!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Trivago Hotel</h3>
+                <p>Experience luxury and comfort at our premium hotel located in the heart of the city. We offer world-class amenities and exceptional service.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms & Suites</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@trivagohotel.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for special offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" class="form-control" style="margin-bottom: 10px;">
+                    <button type="submit" class="submit-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Trivago Hotel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToBooking() {
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function resetForm() {
+            document.getElementById('bookingForm').reset();
+        }
+        
+        function handleBooking(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+            const roomType = document.getElementById('roomType').value;
+            const guests = document.getElementById('guests').value;
+            
+            // Calculate number of nights
+            const checkinDate = new Date(checkin);
+            const checkoutDate = new Date(checkout);
+            const nights = Math.ceil((checkoutDate - checkinDate) / (1000 * 60 * 60 * 24));
+            
+            // Room prices
+            const prices = {
+                'deluxe': 129,
+                'executive': 249,
+                'family': 189
+            };
+            
+            const roomPrice = prices[roomType];
+            const total = roomPrice * nights;
+            
+            // Show confirmation
+            alert(`Thank you, ${name}!\n\nYour booking details:\n- Email: ${email}\n- Check-in: ${checkin}\n- Check-out: ${checkout}\n- Nights: ${nights}\n- Guests: ${guests}\n- Room Type: ${roomType}\n\nTotal: $${total}\n\nWe will contact you at ${email} to confirm your booking.`);
+            
+            // Reset form
+            resetForm();
+            
+            return false;
+        }
+        
+        // Set minimum date for check-in to today
+        window.onload = function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('checkin').setAttribute('min', today);
+            
+            // Update checkout min date when checkin changes
+            document.getElementById('checkin').addEventListener('change', function() {
+                document.getElementById('checkout').setAttribute('min', this.value);
+            });
+        };
+    </script>
+</body>
+</html>

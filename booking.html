@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!--External Linkes And CSS Styles-->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- css sheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/booking.css" />
+
+    <!--Title And Meta Data-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./logo/logo-i-main-color.png" />
+    <title>Booking | Kernel Agency</title>
+</head>
+<body>
+    
+<!-- Start header -->
+<div class="header" id="header">
+    <div class="holder">
+        <a href="#home">
+            <img src="./logo/logo-i-main-color.png" alt="Kernel Travel Agency" class="logo"/>
+        </a>
+        <ul class="main-nav">
+            <li>
+                <a href="./index.html">Home
+                <ul class="extra">
+                    <li><a href="index.html#about">About</a></li>    
+                    <li><a href="index.html#services">Services</a></li>    
+                    <li><a href="index.html#reviews">Testimonials</a></li>    
+                </ul>
+            </a>
+            </li>
+            <li>
+                <a href="./destinations.html">Destinations
+                <ul class="extra">
+                    <li><a href="destinations.html#local">Local</a></li>    
+                    <li><a href="destinations.html#global">Global</a></li>
+                </ul>
+            </a>
+            </li>
+            <li>
+                <a href="./booking.html">Booking
+                <ul class="extra">
+                    <li><a href="booking.html#ticket">Tickets</a></li>    
+                    <li><a href="booking.html#hotel">Hotels</a></li>    
+                    <li><a href="booking.html#cargo">Cargo</a></li>    
+                    <li><a href="booking.html#contact">Contact</a></li>    
+                </ul>
+            </a>
+            </li>
+            <li>
+                <a href="./participants.html">Participants</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- End header -->
+
+
+<!-- Start ticket -->
+<div class="container ticket-container" id="ticket">
+    <h2 class="main-title"><span>Ticket</span> Booking</h2>
+    <!--Start Cover #1-->
+    <div class="cover first-cover">
+        <div class="details">
+            <h3>Discover The World With Us!</h3>
+            <p>
+                Explore 10+ local destinations and 5+ global spots. Inspired by the freedom of birds, 
+                we take you across the skies
+            </p>
+            <a href="./destinations.html">View All Destinations</a>
+        </div>
+    </div>
+    <!--End Cover #1-->
+    <div class="ticket">
+        <div class="image">
+            <div class="content">
+                <div class="phrase">
+                    <h2>Are You Ready to Travel?</h2>
+                    <p>
+                        Start your journey with ease – select your destination, choose your dates, and we’ll handle the rest!
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form" id="ticket-form">
+            <div class="content">
+                <h2>Your Optimum Trips Start Here</h2>
+                <form action="">
+                    <input class="input" type="text" name="name" id="" placeholder="Customer Name" required/>
+                    <input class="input" type="tel" name="tel" id="" placeholder="Phone Number" required/>
+                    <input class="input" type="email" name="email" id="" placeholder="Email Address"/>
+                    <input class="input" type="number" name="quantity " min="1" value="1" id="" placeholder="Tickets Required" required/>
+                    <input class="input" type="date" name="date " id="travel-date" required/>
+                    
+                    <label for="destination"></label>
+                    <select id="destination" class="input" required>
+                        <option value="">Select a Destinations</option>
+                        <optgroup label="Local Destinations">
+                        <option value="">Local Destinations</option>
+                        <option value="khartoum">Khartoum</option>
+                        <option value="arkaweet">Arkaweet | Red Sea</option>
+                        <option value="dindir">Dindir National Park | Blue Nile</option>
+                        <option value="sanganeb">Sanganeb | Red Sea</option>
+                        <option value="bajrawiya">Bajrawiya | Northren State</option>
+                        <option value="marra">Jabal Marra | Darfour</option>
+                        <option value="totil">Totil | Kassala</option>
+                        </optgroup>
+
+                        <optgroup label="Global Destinations">
+                        <option value="cairo">Cairo | Egypt</option>
+                        <option value="istanbul">Istanbul | Turkey</option>
+                        <option value="addis">Addis Ababa | Ethiopia</option>
+                        <option value="rome">Rome | Italy</option>
+                        <option value="riyadh">Riyadh | KSA</option>
+                        <option value="kigali">Kigali | Rwanda</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" value="Confirm"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End ticket -->
+
+<!-- Start hotel -->
+<div class="container hotel-container" id="hotel">
+    <h2 class="main-title"><span>Hotel</span> Booking</h2>
+    <!--Start Cover-->
+    <div class="cover second-cover">
+        <div class="details">
+            <h3>Stay in Style</h3>
+            <p>
+                Choose from 10+ premium hotels worldwide, each designed 
+                for comfort, elegance, and unforgettable experiences
+            </p>
+            <a href="./trivago.html">Visit Trivago</a>
+        </div>
+    </div>
+    <!--End Cover-->
+    <div class="hotel">
+        <div class="form">
+            <div class="content">
+                <h2>Plan Your Stay</h2>
+                <form action="">
+                    <!--<label for="hotel-cus-name">Customer Name</label>-->
+                    <input class="input" type="text" name="name" id="hotel-cus-name" placeholder="Customer Name" required/>
+
+                    <!--<label for="hotel-cus-mail">Customer Email</label>-->
+                    <input class="input" type="email" name="email" id="hotel-cus-mail" placeholder="Email Address"/>
+
+                    <!--<label for="hotle-check-in">Check-In Date</label>-->
+                    <input class="input" type="date" name="date " id="hotle-check-in" required/>
+                    
+                    <!--<label for="hotle-check-out">Check-out Date</label>-->
+                    <input class="input" type="date" name="date " id="hotle-check-out" required/>
+                    
+                    <!--<label for="city"></label>-->
+                    <select id="city" class="input" required>
+                        <option value="">Select a City</option>
+                        <optgroup label="Local Branches">
+                            <option value="khartoum">Khartoum</option>
+                            <option value="portSudan">Port Sudan</option>
+                            <option value="kassala">Kassala</option>
+                            <option value="blueNile">Blue Nile</option>
+                            <option value="northren">Northren</option>
+                            <option value="zalingei">Zalingei</option>
+                        </optgroup>
+                        <optgroup label="Global Branches">
+                            <option value="cairo">Cairo</option>
+                            <option value="istanbul">Istanbul</option>
+                            <option value="addis">Addis Ababa</option>
+                            <option value="rome">Rome</option>
+                            <option value="riyadh">Riyadh</option>
+                            <option value="kigali">Kigali</option>
+                        </optgroup>
+                    </select>
+                    <textarea class="input" name="" id="" placeholder="Special Request ..."></textarea>
+                    <input type="submit" value="Book"/>
+                </form>
+            </div>
+        </div>
+
+        <div class="image">
+            <div class="content">
+                <div class="phrase">
+                    <h2>Stay Where Excellence Lives</h2>
+                    <p>
+                        Select your dream destination, pick your dates, and let Kernel Travel 
+                        handle every detail. From luxury stays to smooth logistics – we’ve got you covered
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End hotel -->
+
+<!-- start cargo -->
+<div class="container cargo-container" id="cargo">
+    <h2 class="main-title"><span>Cargo</span> Services</h2>
+    <!--Start Cover #2-->
+    <div class="cover second-cover">
+        <div class="details">
+            <h3>Trust Kernel Cargo for Reliable Shipping</h3>
+            <p>
+                With over 10 years of experience in cargo and logistics, 
+                we now serve 5+ major international stations across the globe
+            </p>
+        </div>
+    </div>
+    <!--End Cover #2-->
+    <div class="booking-section">        
+        <!-- cargo services Section -->
+        <section id="cargoServices" class="section cargo-services">
+            <div class="container">
+                <div class="cargo-services-grid">
+                    <div class="service-card land">
+                        <h3>Land Shipping</h3>
+                        <p>Fast and secure land shipping service for all types of goods, within cities and across countries</p>
+                    </div>
+                    
+                    <div class="service-card air">
+                        <h3>Air Shipping</h3>
+                        <p>Quick air freight with top international airlines for your important parcels and cargo</p>
+                    </div>
+                    
+                    <div class="service-card sea">
+                        <h3>Sea Shipping</h3>
+                        <p>Cost-effective sea freight solutions for large goods and major commercial projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shipping Request Section -->
+        <section id="shipping" class="section">
+            <div class="container">
+                <h2 class="main-title"><span>Request</span> Shipping</h2>
+
+                <p>
+                    Fill out the form below to request a shipping service. We’ll contact you shortly to confirm the details.
+                </p>
+                
+                <div class="form-container">
+                    <form id="shipping-form">
+                        <div class="form-group">
+                            <label for="from">Shipping From:</label>
+                            <select id="from" name="from" required>
+                                <option value="">Select City</option>
+                                <option value="khartoum">Khartoum</option>
+                                <option value="riyadh">Riyadh</option>
+                                <option value="cairo">Cairo</option>
+                                <option value="istanbul">Istanbul</option>
+                                <option value="kigali">Kigali</option>
+                                <option value="addis-ababa">Addis Ababa</option>
+                                <option value="rome">Rome</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="to">Shipping To:</label>
+                            <select id="to" name="to" required>
+                                <option value="">Select City</option>
+                                <option value="khartoum">Khartoum</option>
+                                <option value="riyadh">Riyadh</option>
+                                <option value="cairo">Cairo</option>
+                                <option value="istanbul">Istanbul</option>
+                                <option value="kigali">Kigali</option>
+                                <option value="addis-ababa">Addis Ababa</option>
+                                <option value="rome">Rome</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shipment-name">Shipment Name:</label>
+                            <input type="text" id="shipment-name" name="shipment-name" placeholder="Shipment Name:" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="client-name">Client Name:</label>
+                            <input type="text" id="client-name" name="client-name" placeholder="Client Name:" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter phone number:" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weight">Shipment Weight (kg):</label>
+                            <input type="number" id="weight" name="weight" placeholder="Enter shipment weight" min="0.1" step="0.1" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="details">Shipment Details:</label>
+                            <textarea id="details" name="details" placeholder="Enter shipment details"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+<!-- end cargo -->
+
+<!-- Start contact -->
+<h2 class="main-title"><span>Contact</span> Us</h2>
+<div class="contact" id="contact">
+
+    <div class="image">
+        <div class="content">
+            <div class="phrase">
+                <h2>Find Us On Telegram</h2>
+                <p>
+                    Follow our channels to stay connected and never miss an update!
+                    Get the latest travel deals, destination highlights, and exclusive offers 
+                    directly from Kernel Travel & Tourism. Join our community on WhatsApp, 
+                    Telegram, and social media for quick support, exciting news, and inspiring travel 
+                    experiences around the world
+                </p>
+            </div>
+            <div class="social">
+                <a href="https://wa.me/201000000000" target="_blank" class="whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/KernelTravel" target="_blank" class="telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="content">
+            <h3>Contact Customer Services</h3>
+            <form action="">
+                <input class="input" type="text" name="name" id="" placeholder="Inquiry Title"/>
+                <textarea class="input" name="message" placeholder="Write Your Inquiry Here... "></textarea>
+                <input type="submit" value="Send"/>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End contact -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="logo">
+                <img src="./logo/logo-h-white.png" alt="Kernel Travel Agency" class="logo"/>
+            </div>
+            <div class="column home">
+                <h3>Home</h3>
+                <ul>
+                    <li><a href="index.html#about">About</a></li>    
+                    <li><a href="index.html#services">Services</a></li>    
+                    <li><a href="index.html#reviews">Testimonials</a></li>    
+                </ul>
+            </div>
+            <div class="column destinations">
+                <h3>Destinations</h3>
+                <ul>
+                    <li><a href="destinations.html#local">Local</a></li>    
+                    <li><a href="destinations.html#global">Global</a></li>
+                <ul>
+            </div>
+            <div class="column booking">
+                <h3>Booking</h3>
+                <ul>
+                    <li><a href="booking.html#ticket">Tickets</a></li>    
+                    <li><a href="booking.html#hotel">Hotels</a></li>    
+                    <li><a href="booking.html#cargo">Cargo</a></li>    
+                    <li><a href="booking.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column participants">
+                <h3>Participants</h3>
+                <ul>
+                    <li><a href="./participants.html">First Page</a></li>
+                    <li><a href="./participants.html">Second Page</a></li>
+                    <li><a href="./participants.html">Third Page</a></li>
+                    <li><a href="./participants.html">Fourth Page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Kernel Agency | All Rights Reserved | 2025</p>
+        </div>
+    </div>
+<script>
+  // Get today's date in YYYY-MM-DD format
+  const today = new Date().toISOString().split('T')[0];
+
+  // Set it as the default value
+  document.getElementById('travel-date').value = today;
+</script>
+</body>
+</html>
