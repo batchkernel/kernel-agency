@@ -134,10 +134,9 @@ a {
 }
 @media (max-width:767px) {
     .header .main-nav > li > a {
-        padding: 10px;
+        padding: 5px;
         font-size: 14px;
         height: 40px;
-
     }
 }
 .header .main-nav > li > a:hover {
@@ -393,3 +392,4 @@ h2.main-title span{
     z-index: 2;
 
 }
+
